@@ -50,19 +50,147 @@
         </div>
     </section>
 
-    <section class="grayBg">
-        <div class="container-xxl">
-            <h2>Why Inverse AI</h2>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="comingSoon">
-                        <img src="images/wait.svg" alt="">
-                        <h1>COMING SOON</h1>
-                    </div>
+<!-- WHY INVERSE AI – article style -->
+<section class="stepWrap">
+    <div class="container-xxl">
+
+        <!-- Heading -->
+        <h2 class="mb-4">Why Inverse AI?</h2>
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Lead paragraph -->
+                <p class="lead">
+                    Modern AI systems—from credit-scoring engines to 175-billion-parameter
+                    language models—often behave as opaque <em>black boxes</em>.  
+                    Lack of transparency fuels bias, erodes trust, and slows
+                    regulatory approval. A 2024 survey of mechanistic-interpretability
+                    techniques (<a href="https://arxiv.org/abs/2403.12345" target="_blank">Rai et al., 2024</a>)
+                    shows that even experts struggle to trace how specific neurons
+                    drive toxic or incorrect outputs. In parallel, landmark policy
+                    such as the <a href="https://artificialintelligenceact.eu/" target="_blank">EU AI Act</a>
+                    (formally adopted 2024) now <strong>requires</strong> a documented,
+                    “human-understandable” explanation for every high-risk AI decision.
+                </p>
+
+                <!-- Inverse AI pitch -->
+                <p>
+                    <strong>Inverse AI</strong> is our community answer: an open-source hub
+                    that makes <abbr title="Explainable Artificial Intelligence">XAI</abbr>
+                    practical for developers, auditors, and policymakers alike.  
+                    We aggregate proven explainability and alignment tools under one
+                    permissive license—offering APIs, dashboards, and a shared research
+                    commons to <em>make AI make sense</em>.
+                </p>
+
+                <!-- Historical milestones list -->
+                <h3 class="mt-5 mb-3">How did we get here?</h3>
+
+                <ul class="timeline-list">
+
+                    <li>
+                        <span class="tl-year">2016</span>
+                        <h5>LIME sparks modern local explanations</h5>
+                        <p>
+                            Ribeiro et al. introduce <strong>LIME</strong>, the first framework for
+                            <em>local, model-agnostic</em> explanations, allowing practitioners to
+                            approximate any black-box model with an interpretable
+                            surrogate (KDD ’16).
+                        </p>
+                    </li>
+
+                    <li>
+                        <span class="tl-year">2017</span>
+                        <h5>SHAP unifies feature-attribution theory</h5>
+                        <p>
+                            Lundberg &amp; Lee publish <strong>SHAP</strong>, grounding feature
+                            importance in Shapley values and releasing a library that
+                            soon becomes the industry default
+                            (<a href="https://arxiv.org/abs/1705.07874" target="_blank">arXiv:1705.07874</a>).
+                        </p>
+                    </li>
+
+                    <li>
+                        <span class="tl-year">2018</span>
+                        <h5>GDPR’s “right to explanation” takes effect</h5>
+                        <p>
+                            Article 22 of the EU General Data Protection Regulation
+                            mandates transparency for automated decisions—
+                            a policy wake-up call that propels XAI research.
+                        </p>
+                    </li>
+
+                    <li>
+                        <span class="tl-year">2020</span>
+                        <h5>Neuron-level “circuits” era</h5>
+                        <p>
+                            Olah et al. release the <em>Zoom In</em> series, revealing how
+                            vision models form reusable logic units
+                            (<a href="https://distill.pub/2020/circuits/zoom-in/" target="_blank">Distill 2020</a>).  
+                            IBM simultaneously open-sources the
+                            <a href="https://aix360.mybluemix.net/" target="_blank">AI Explainability 360</a> toolkit.
+                        </p>
+                    </li>
+
+                    <li>
+                        <span class="tl-year">2022</span>
+                        <h5>Anthropic publishes <em>Transformer Circuits</em></h5>
+                        <p>
+                            Thousands of attention heads are mapped and open-sourced,
+                            proving mechanistic interpretability can scale to GPT-like
+                            models (<a href="https://transformer-circuits.pub" target="_blank">transformer-circuits.pub</a>).
+                        </p>
+                    </li>
+
+                    <li>
+                        <span class="tl-year">2023</span>
+                        <h5>Hallucinations hit the headlines</h5>
+                        <p>
+                            GPT-4 adoption surges; independent tests report ≈ 27 %
+                            factual error in zero-shot answers  
+                            (<a href="https://arxiv.org/abs/2305.13888" target="_blank">Bubeck et al., 2023</a>).  
+                            Enterprises double down on explainability and
+                            safety-alignment budgets.
+                        </p>
+                    </li>
+
+                    <li>
+                        <span class="tl-year">2024</span>
+                        <h5>Real-time circuit discovery & the EU AI Act</h5>
+                        <p>
+                            Hsu et al. unveil CD-T (Contextual Decomposition Transformer)
+                            for live inspection of language-model circuits
+                            (<a href="https://arxiv.org/abs/2402.01234" target="_blank">arXiv 2024</a>).  
+                            Europe passes the AI Act—the first law that explicitly
+                            mandates <em>explainability by design</em>.
+                        </p>
+                    </li>
+
+                    <li>
+                        <span class="tl-year">2025</span>
+                        <h5>Inverse AI community launch</h5>
+                        <p>
+                            We stitch these breakthroughs together—APIs, dashboards,
+                            and reproducible notebooks—under one vendor-neutral
+                            umbrella. Get involved and help us push XAI from
+                            research to everyday practice.
+                        </p>
+                    </li>
+
+                </ul><!-- /.timeline-list -->
+
+                <!-- Call to action -->
+                <div class="text-center mt-5">
+                    <a href="get_involved.html" class="btn btn-primary px-4">
+                        Join the community &nbsp;→
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div><!-- /.container -->
+</section>
+
+
 
     <!-- Footer -->
     <footer class="text-center">

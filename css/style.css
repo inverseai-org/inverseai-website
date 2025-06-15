@@ -363,6 +363,7 @@ input[type=text] {
 
 .grayBg {
     background: var(--bs-gray-300);
+    color:#495057;
 }
 
 .timelineBg {
@@ -623,3 +624,16 @@ canvas#seeSHAPPlot {
 .comingSoon h1 {
     font-weight: normal;
 }
+
+/* simple article look */
+.article p { max-width: 800px; }
+.timeline-list { list-style: none; padding-left: 0; margin: 0; }
+.timeline-list li { margin-bottom: 2.5rem; position: relative; padding-left: 88px; }
+.timeline-list .tl-year {
+    position: absolute; left: 0; top: 0;
+    width: 64px; height: 64px; line-height: 64px;
+    border-radius: 50%; text-align: center;
+    background: #111; color: #fff; font-weight: 600;
+}
+.timeline-list h5 { margin-top: 0; font-weight: 600; }
+.timeline-list p { margin-bottom: 0; }
