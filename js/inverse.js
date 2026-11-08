@@ -51,3 +51,18 @@
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = new Date().getFullYear();
 })();
+
+// Contact form: submit in the background, then always show the thank-you page.
+(function () {
+  var form = document.querySelector('form[name="contact"]');
+  if (!form || !window.fetch) return;
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var btn = form.querySelector('button[type="submit"]');
+    if (btn) { btn.disabled = true; btn.textContent = "Sending…"; }
+    var body = new URLSearchParams(new FormData(form)).toString();
+    var done = function () { window.location.href = "thanks.html"; };
+    fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: body })
+      .then(done, done);
+  });
+})();
