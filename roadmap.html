@@ -1,272 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Inverse AI</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
-    <link rel="stylesheet" href="css/step.css">
-    <link rel="stylesheet" href="css/timeline.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mediascreen.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roadmap — Inverse AI</title>
+  <meta name="description" content="Inverse AI’s roadmap from published research to open tools, pilots, and a platform.">
+  <link rel="canonical" href="https://inverseai.org/roadmap.html">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Inverse AI">
+  <meta property="og:title" content="Roadmap — Inverse AI">
+  <meta property="og:description" content="Inverse AI’s roadmap from published research to open tools, pilots, and a platform.">
+  <meta property="og:url" content="https://inverseai.org/roadmap.html">
+  <meta property="og:image" content="https://inverseai.org/images/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/inverse.css">
 </head>
-
 <body>
-    <div class="page-loader">
-        <div class="page-loaderBox">
-            <div class="spinner"></div>
-            <div class="txt">Inverse AI</div>
-        </div>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Inverse AI, home">
+        <span class="brand-name">Inverse AI</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span class="sr-only">Menu</span></button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Why_inverse_ai.html">Why Inverse AI</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="use_cases.html">Use Cases</a></li>
+          <li><a href="how_it_works.html">How It Works</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="roadmap.html" aria-current="page">Roadmap</a></li>
+          <li class="nav-cta"><a href="get_involved.html">Get Involved</a></li>
+        </ul>
+      </nav>
     </div>
-    <!-- Hero Section -->
-    <section class="headerSection" id="headerTop">
-        <div class="headerTop">
-            <h1><a href="#">Inverse AI</a></h1>
-            <div class="menuIco"></div>
-            <button class="menuBtn" id="menuBtn">
-                <img src="images/menu.svg" alt="">
-            </button>
-            <div class="navBg">
-                <button id="menuClose"><img src="images/close.svg" alt=""></button>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Why_inverse_ai.html">Why Inverse AI</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="use_cases.html">Use Cases</a></li>
-                    <li><a href="how_it_works.html">How It Works</a></li>
-                    <li><a href="roadmap.html">Roadmap</a></li>
-                    <li><a href="get_involved.html">Get Involved</a></li>
-                </ul>
-            </nav>
-        </div>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow">Roadmap</span>
+        <h1>From published research to a platform teams can rely on.</h1>
+        <p class="lede">We build in the order the evidence allows: methods first, then open tools and pilots, then the platform.</p>
+      </div>
     </section>
 
-    <section class="grayBg">
-        <div class="container-xxl">
-            <h2>Roadmap</h2>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="comingSoon">
-                        <img src="images/wait.svg" alt="">
-                        <h1>COMING SOON</h1>
-                    </div>
-                </div>
-            </div>
+    <section class="band white">
+      <div class="wrap">
+        <div class="phases">
+          <div class="phase now reveal">
+            <span class="when">Now</span>
+            <h3>Research foundation</h3>
+            <ul>
+              <li class="done">Mask-aware explainability benchmark for diabetic retinopathy, published with IEEE (2026)</li>
+              <li class="done">MLOps foundation: continuous automation for ML, published in <em>Information</em> (2020)</li>
+              <li class="done">Toxicity Guard prototype: a reinforcement-learning controller that decides when a language model should answer, clarify, or refuse (2026)</li>
+              <li class="doing">Steering account for language and vision-language models, manuscript in preparation</li>
+              <li class="doing">Platform architecture and service repositories</li>
+              <li class="doing">Company formation and first funding round</li>
+            </ul>
+          </div>
+          <div class="phase reveal">
+            <span class="when">Next</span>
+            <h3>Open tools and first pilots</h3>
+            <ul>
+              <li>Open-source toolkit for scoring explanations, released from the Sight methods</li>
+              <li>Lesion-level validation of retinal explanations</li>
+              <li>STEER cards and a strong-baseline evaluation harness for steering</li>
+              <li>First pilot with a clinical or industry design partner</li>
+            </ul>
+          </div>
+          <div class="phase reveal">
+            <span class="when">Later</span>
+            <h3>The platform</h3>
+            <ul>
+              <li>Decision reports that pair each prediction with checked explanations</li>
+              <li>Runtime intervention with cost accounting</li>
+              <li>Production monitoring: explanation drift, fairness, audit trail</li>
+              <li>Evidence packs for high-risk AI compliance</li>
+            </ul>
+          </div>
         </div>
+        <div class="legend"><span class="l-done">Done</span><span class="l-doing">In progress</span><span class="l-next">Planned</span></div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="container-fluid">
-            <div class="container-xxl">
-                <div class="row">
-                    <div class="col-md-12">
-                        <ul class="footerNav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="Why_inverse_ai.html">Why Inverse AI</a></li>
-                            <li><a href="features.html">Features</a></li>
-                            <li><a href="use_cases.html">Use Cases</a></li>
-                            <li><a href="how_it_works.html">How It Works</a></li>
-                            <li><a href="roadmap.html">Roadmap</a></li>
-                            <li><a href="get_involved.html">Get Involved</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-12">
-                        <ul class="footSocial">
-                            <li>
-                                <a href="#">
-                                    <img src="images/facebook.svg" alt="facebook">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/x.svg" alt="x">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/insta.svg" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/youtube.svg" alt="youtube">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <section class="band dark">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">What funding unlocks</span>
+          <h2>Turning methods into tools.</h2>
+          <p>The research exists. The next step is the engineering and partnerships that turn it into something teams can use.</p>
         </div>
-        <p class="mb-1">Made with ❤️ in UAE</p>
-    </footer>
+        <div class="grid grid-3">
+          <div class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M7 6h10M6 8l5 8M18 8l-5 8"/></svg></div><h3>Engineering</h3><p>Research engineers to turn the published methods into an open toolkit and the first platform services.</p></div>
+          <div class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></div><h3>Compute</h3><p>GPU time for steering experiments across open language and vision-language models.</p></div>
+          <div class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 12l3 3 6-6"/><circle cx="12" cy="12" r="9"/></svg></div><h3>Partnerships</h3><p>Clinical and industry pilots that test the methods on real models and real decisions.</p></div>
+        </div>
+      </div>
+    </section>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/jquery.steps.js"></script>
-    <script src="js/script.js"></script>
-
-    <script>
-
-        var horizontalBarChartShapp = new Chart(seeSHAPPlot, {
-            type: 'horizontalBar',
-            data: {
-                labels: ["Label 1", "Label 2", "Label 3", "Label 4", "Label 5"],
-                datasets: [{
-                    data: [100, -220, 180, -100, 50],
-                    backgroundColor: ["#73BFB8", "#cff67b", "#94dafb", "#fd8080", "#6d848e", "#26a0fc", "#26e7a6", "#febc3b", "#fab1b2", "#8b75d7"],
-                }]
-            },
-            options: {
-                tooltips: {
-                    enabled: true
-                },
-                responsive: true,
-                legend: {
-                    display: false,
-                    responsive: true,
-                    position: 'top',
-                    fullWidth: true,
-                    labels: {
-                        boxWidth: 10,
-                        padding: 50,
-                    }
-                },
-                scales: {
-                    yAxes: [{
-                        barPercentage: 0.75,
-                        gridLines: {
-                            display: true,
-                            drawTicks: true,
-                            drawOnChartArea: true,
-                            drawBorder: true
-                        },
-                        ticks: {
-                            fontColor: '#000',
-                            fontFamily: 'Lato',
-                            fontSize: 16
-                        }
-
-                    }],
-                    xAxes: [{
-                        gridLines: {
-                            display: true,
-                            drawTicks: true,
-                            tickMarkLength: 5,
-                            drawBorder: true
-                        },
-                        ticks: {
-                            padding: 5,
-                            beginAtZero: true,
-                            fontColor: '#000',
-                            fontFamily: 'Lato',
-                            fontSize: 16,
-                            callback: function (label, index, labels) {
-                                return label / 1000;
-                            }
-
-                        },
-                        scaleLabel: {
-                            display: false,
-                            padding: 10,
-                            fontFamily: 'Lato',
-                            fontColor: '#000',
-                            fontSize: 16,
-                            fontStyle: 700,
-                            labelString: 'see SHAP Plot'
-                        },
-
-                    }]
-                }
-            }
-        });
-
-
-
-        var horizontalBarChart = new Chart(DiffResult, {
-            type: 'horizontalBar',
-            data: {
-                labels: ["Label 1", "Label 2", "Label 3", "Label 4", "Label 5"],
-                datasets: [{
-                    data: [35, 22, 18, 10, 50],
-                    backgroundColor: ["#73BFB8", "#cff67b", "#94dafb", "#fd8080", "#6d848e", "#26a0fc", "#26e7a6", "#febc3b", "#fab1b2", "#8b75d7"],
-                }]
-            },
-            options: {
-                tooltips: {
-                    enabled: false
-                },
-                responsive: true,
-                legend: {
-                    display: false,
-                    responsive: true,
-                    position: 'bottom',
-                    fullWidth: true,
-                    labels: {
-                        boxWidth: 10,
-                        padding: 10
-                    }
-                },
-                scales: {
-                    yAxes: [{
-                        barPercentage: 0.75,
-                        gridLines: {
-                            display: true,
-                            drawTicks: true,
-                            drawOnChartArea: false
-                        },
-                        ticks: {
-                            fontColor: '#000',
-                            fontFamily: 'Lato',
-                            fontSize: 16
-                        }
-
-                    }],
-                    xAxes: [{
-                        gridLines: {
-                            display: true,
-                            drawTicks: false,
-                            tickMarkLength: 5,
-                            drawBorder: false
-                        },
-                        ticks: {
-                            padding: 5,
-                            beginAtZero: true,
-                            fontColor: '#000',
-                            fontFamily: 'Lato',
-                            fontSize: 16,
-                            callback: function (label, index, labels) {
-                                return label / 1000;
-                            }
-
-                        },
-                        scaleLabel: {
-                            display: false,
-                            padding: 10,
-                            fontFamily: 'Lato',
-                            fontColor: '#000',
-                            fontSize: 16,
-                            fontStyle: 700,
-                            labelString: 'Diff Result'
-                        },
-
-                    }]
-                }
-            }
-        });
-    </script>
-
+    <section class="band cta">
+      <div class="wrap">
+        <div>
+          <h2>Help us move to the next phase.</h2>
+          <p>We’re speaking with investors and design partners now.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="get_involved.html">Get involved <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="research.html">Read the research</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><span class="brand-name">Inverse AI</span></a>
+          <p class="footer-about">Helping teams understand their AI, correct it, and trust it. Research-led, built in the UAE.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="Why_inverse_ai.html">Why Inverse AI</a></li>
+            <li><a href="Why_inverse_ai.html#founder">Founder</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="get_involved.html">Get Involved</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="use_cases.html">Use Cases</a></li>
+            <li><a href="how_it_works.html">How It Works</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Research</h4>
+          <ul>
+            <li><a href="research.html">Publications</a></li>
+            <li><a href="sight.html">Sight</a></li>
+            <li><a href="steer.html">Steer</a></li>
+            <li><a href="https://scholar.google.com/citations?user=QzRmRWQAAAAJ&amp;hl=en" rel="noopener">Google Scholar</a></li>
+            <li><a href="https://orcid.org/0000-0001-9868-7477" rel="noopener">ORCID</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>© <span data-year>2026</span> Inverse AI. United Arab Emirates.</span>
+        <span>Research in progress. Not a medical device. Not yet a commercial product.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/inverse.js"></script>
 </body>
-
 </html>

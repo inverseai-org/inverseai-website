@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sight — Inverse AI</title>
+  <meta name="description" content="Mask-aware benchmarking of Grad-CAM and SHAP for diabetic retinopathy: does the explanation stay on the retina and support the grade? IEEE, 2026.">
+  <link rel="canonical" href="https://inverseai.org/sight.html">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Inverse AI">
+  <meta property="og:title" content="Sight — Inverse AI">
+  <meta property="og:description" content="Mask-aware benchmarking of Grad-CAM and SHAP for diabetic retinopathy: does the explanation stay on the retina and support the grade? IEEE, 2026.">
+  <meta property="og:url" content="https://inverseai.org/sight.html">
+  <meta property="og:image" content="https://inverseai.org/images/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/inverse.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Inverse AI, home">
+        <span class="brand-name">Inverse AI</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span class="sr-only">Menu</span></button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Why_inverse_ai.html">Why Inverse AI</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="use_cases.html">Use Cases</a></li>
+          <li><a href="how_it_works.html">How It Works</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="roadmap.html">Roadmap</a></li>
+          <li class="nav-cta"><a href="get_involved.html">Get Involved</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow">Research · Sight</span>
+        <h1>Did the model look at the retina?</h1>
+        <p class="lede">Toward Fair Explainable AI in Medical Imaging: Mask-Aware Benchmarking of Grad-CAM and SHAP for Diabetic Retinopathy. IEEE, 2026.</p>
+      </div>
+    </section>
+
+    <section class="band-tight light">
+      <div class="wrap">
+        <p class="measure" style="margin:0"><strong>Saeed Thabit, Ala’ Abu Hilal, Muhammad Umair Khan, Yingfeng Wang, and Leila Ismail.</strong> <span class="muted">United Arab Emirates University, with the INDUCE lab.</span></p>
+      </div>
+    </section>
+
+    <section class="band white">
+      <div class="wrap split split-top">
+        <div class="reveal prose">
+          <span class="eyebrow">The question</span>
+          <p class="lede">A fundus photograph is graded on a five-step scale, from no retinopathy to proliferative disease. A model can return that grade in a moment. The clinician’s question is narrower: which part of the eye carried the decision, and did the highlighted region actually matter?</p>
+          <p>The study answers with two maps of the same prediction. Grad-CAM shows the region the network used. SHAP assigns each pixel a signed push, for the grade or against it. Both maps are then restricted to the retinal disc, so credit that spills onto the dark corners isn’t counted.</p>
+          <ol class="flow" aria-label="Pipeline">
+            <li>Fundus image</li><li>Pre-processing</li><li>Trained model</li><li>Grade</li><li>Grad-CAM and SHAP</li><li>Retinal-disc mask</li><li>Report</li>
+          </ol>
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">Results</span>
+          <div class="metrics" style="grid-template-columns:1fr;margin-top:0">
+            <div class="metric"><div class="metric-num">82.2%</div><div class="metric-label">accuracy on a 550-image test set from APTOS 2019</div></div>
+            <div class="metric"><div class="metric-num">0.896</div><div class="metric-label">quadratic weighted kappa</div></div>
+            <div class="metric"><div class="metric-num">0.290 → 0.206</div><div class="metric-label">Grad-CAM mean border ratio, once the score is kept inside the retinal disc</div></div>
+          </div>
+          <p class="muted small">The two explanation methods are stronger on different grades.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band light">
+      <div class="wrap">
+        <figure class="figure figure-frame reveal mb-2">
+          <img src="images/sight/preprocess.jpg" alt="A moderate diabetic retinopathy photograph through resize, contrast enhancement, background subtraction, and a circular crop." width="1800" height="386" loading="lazy">
+          <figcaption>One photograph as the model sees it. The circular crop is the region the explanation is later scored on.</figcaption>
+        </figure>
+        <div class="grid grid-2">
+          <figure class="figure figure-frame reveal">
+            <img src="images/sight/gradcam.jpg" alt="Four fundus photographs beside Grad-CAM heatmaps. Three predictions match the true grade. One moderate case is predicted severe." width="1800" height="602" loading="lazy">
+            <figcaption>Grad-CAM on four test cases. A green frame is a grade that matched; a red frame is one that didn’t. The moderate case graded severe is the miss.</figcaption>
+          </figure>
+          <figure class="figure figure-frame reveal">
+            <img src="images/sight/shap.jpg" alt="The same four cases with SHAP maps. Colour shows pixels that support or oppose each grade." width="1800" height="1292" loading="lazy">
+            <figcaption>SHAP on the same cases. Red supports the grade named above the map; blue argues against it. The maps are faint because credit is spread across the retina, which is part of what the comparison measures.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="band white">
+      <div class="wrap">
+        <div class="measure reveal">
+          <span class="eyebrow">Limits</span>
+          <h2 style="font-size:clamp(1.8rem,3.6vw,2.4rem);margin-bottom:1rem">What this study does not show.</h2>
+          <p>APTOS grades the whole image and does not outline lesions. A heatmap is not yet proof that the model found a microaneurysm, a haemorrhage, or an exudate. That is the limit of this study, and the next measurement the work needs.</p>
+          <div class="callout mt-2"><strong>Not a screening device</strong>This study explains a grade. It is not a medical device, and this site does not accept images.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band cta">
+      <div class="wrap">
+        <div>
+          <h2>Have lesion-annotated data or a clinical question?</h2>
+          <p>Lesion-level validation is the next step for this work. We’d like to hear from clinicians and dataset holders.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="get_involved.html">Collaborate <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="research.html">All research</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><span class="brand-name">Inverse AI</span></a>
+          <p class="footer-about">Helping teams understand their AI, correct it, and trust it. Research-led, built in the UAE.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="Why_inverse_ai.html">Why Inverse AI</a></li>
+            <li><a href="Why_inverse_ai.html#founder">Founder</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="get_involved.html">Get Involved</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="use_cases.html">Use Cases</a></li>
+            <li><a href="how_it_works.html">How It Works</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Research</h4>
+          <ul>
+            <li><a href="research.html">Publications</a></li>
+            <li><a href="sight.html">Sight</a></li>
+            <li><a href="steer.html">Steer</a></li>
+            <li><a href="https://scholar.google.com/citations?user=QzRmRWQAAAAJ&amp;hl=en" rel="noopener">Google Scholar</a></li>
+            <li><a href="https://orcid.org/0000-0001-9868-7477" rel="noopener">ORCID</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>© <span data-year>2026</span> Inverse AI. United Arab Emirates.</span>
+        <span>Research in progress. Not a medical device. Not yet a commercial product.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/inverse.js"></script>
+</body>
+</html>

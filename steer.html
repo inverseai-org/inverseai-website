@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Steer — Inverse AI</title>
+  <meta name="description" content="Representation steering in large language and vision-language models, and the STEER standard for reporting interventions.">
+  <link rel="canonical" href="https://inverseai.org/steer.html">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Inverse AI">
+  <meta property="og:title" content="Steer — Inverse AI">
+  <meta property="og:description" content="Representation steering in large language and vision-language models, and the STEER standard for reporting interventions.">
+  <meta property="og:url" content="https://inverseai.org/steer.html">
+  <meta property="og:image" content="https://inverseai.org/images/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/inverse.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Inverse AI, home">
+        <span class="brand-name">Inverse AI</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span class="sr-only">Menu</span></button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Why_inverse_ai.html">Why Inverse AI</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="use_cases.html">Use Cases</a></li>
+          <li><a href="how_it_works.html">How It Works</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="roadmap.html">Roadmap</a></li>
+          <li class="nav-cta"><a href="get_involved.html">Get Involved</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow">Research · Steer</span>
+        <h1>Change what a model does, and know that the change was real.</h1>
+        <p class="lede">We study representation steering in large language models and vision-language models: how a behaviour is shifted at runtime, and how you know the shift held.</p>
+      </div>
+    </section>
+
+    <section class="band white">
+      <div class="wrap split split-top">
+        <div class="reveal">
+          <span class="eyebrow">The question</span>
+          <h2 style="font-size:clamp(1.8rem,3.6vw,2.5rem)">Editing a running model is possible. Knowing it worked is the hard part.</h2>
+        </div>
+        <div class="reveal prose">
+          <p class="lede">A language model reads. A vision-language model reads and sees. Teams already ask both to be more careful, more factual, or more specific. Retraining is slow, and editing the running model is possible.</p>
+          <p>The retina study asks whether a highlighted region earned the grade. This work asks the matching question of a steered model. A gain over the untouched model is a start. A gain that survives a strong alternative, and whose cost in capability or compute has been counted, is the claim worth keeping.</p>
+          <p>The same standard covers models that only read and models that also see. A result that holds for one and is untested on the other will be labelled that way.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band dark">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">The standard</span>
+          <h2>STEER: one description for every intervention.</h2>
+          <p>Whether the model handles text, or images and text together, each intervention is described the same way.</p>
+        </div>
+        <div class="steer reveal">
+          <div><div class="letter">S</div><strong>Signal</strong><span>How the direction is built.</span></div>
+          <div><div class="letter">T</div><strong>Target site</strong><span>Where the change is written.</span></div>
+          <div><div class="letter">E</div><strong>Edit</strong><span>What is added, removed, or gated.</span></div>
+          <div><div class="letter">E</div><strong>Execution</strong><span>When it runs, and under what rule.</span></div>
+          <div><div class="letter">R</div><strong>Result</strong><span>What moved, against which comparison, at what cost.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band-tight light">
+      <div class="wrap">
+        <div class="callout measure reveal"><strong>Work in progress</strong>This account is under way as doctoral research at UAEU. Findings will be published here once the manuscript is public. For now, this page states the question and the standard the work will be held to.</div>
+      </div>
+    </section>
+
+    <section class="band cta">
+      <div class="wrap">
+        <div>
+          <h2>Working on steering or model editing?</h2>
+          <p>We’re open to collaboration on evaluation, especially for vision-language models.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="get_involved.html">Collaborate <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="research.html">All research</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><span class="brand-name">Inverse AI</span></a>
+          <p class="footer-about">Helping teams understand their AI, correct it, and trust it. Research-led, built in the UAE.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="Why_inverse_ai.html">Why Inverse AI</a></li>
+            <li><a href="Why_inverse_ai.html#founder">Founder</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="get_involved.html">Get Involved</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="use_cases.html">Use Cases</a></li>
+            <li><a href="how_it_works.html">How It Works</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Research</h4>
+          <ul>
+            <li><a href="research.html">Publications</a></li>
+            <li><a href="sight.html">Sight</a></li>
+            <li><a href="steer.html">Steer</a></li>
+            <li><a href="https://scholar.google.com/citations?user=QzRmRWQAAAAJ&amp;hl=en" rel="noopener">Google Scholar</a></li>
+            <li><a href="https://orcid.org/0000-0001-9868-7477" rel="noopener">ORCID</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>© <span data-year>2026</span> Inverse AI. United Arab Emirates.</span>
+        <span>Research in progress. Not a medical device. Not yet a commercial product.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/inverse.js"></script>
+</body>
+</html>

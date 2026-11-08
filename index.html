@@ -1,566 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Inverse AI</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
-    <link rel="stylesheet" href="css/step.css">
-    <link rel="stylesheet" href="css/timeline.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mediascreen.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inverse AI — AI you can understand, correct, and trust</title>
+  <meta name="description" content="Inverse AI helps teams understand why their AI decides, correct it without retraining, and trust that it stays correct. Research-led, from the UAE.">
+  <link rel="canonical" href="https://inverseai.org/">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Inverse AI">
+  <meta property="og:title" content="Inverse AI — AI you can understand, correct, and trust">
+  <meta property="og:description" content="Inverse AI helps teams understand why their AI decides, correct it without retraining, and trust that it stays correct. Research-led, from the UAE.">
+  <meta property="og:url" content="https://inverseai.org/">
+  <meta property="og:image" content="https://inverseai.org/images/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/inverse.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"Organization","@id":"https://inverseai.org/#org","name":"Inverse AI","url":"https://inverseai.org/","logo":"https://inverseai.org/images/og.jpg","description":"AI you can understand, correct, and trust: checked explanations, measured fixes, and production monitoring.","founder":{"@id":"https://inverseai.org/#founder"},"areaServed":"Worldwide","location":{"@type":"Place","name":"United Arab Emirates"}},
+    {"@type":"Person","@id":"https://inverseai.org/#founder","name":"Saeed Thabit","alternateName":["Saeed Albarhami","Saeed Abdulqawi Thabit","Saeed Abdulqawi Saeed Thabit","Saeed Thabet","سعيد عبدالقوي ثابت","سعيد ثابت"],"jobTitle":"Founder","worksFor":{"@id":"https://inverseai.org/#org"},"knowsAbout":["Explainable AI","Interpretability","Representation steering","Large language models","Vision-language models","Medical imaging","MLOps"],"affiliation":{"@type":"CollegeOrUniversity","name":"United Arab Emirates University"},"sameAs":["https://scholar.google.com/citations?user=QzRmRWQAAAAJ","https://orcid.org/0000-0001-9868-7477"]}
+  ]}
+  </script>
 </head>
-
 <body>
-    <div class="page-loader">
-        <div class="page-loaderBox">
-            <div class="spinner"></div>
-            <div class="txt">Inverse AI</div>
-        </div>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Inverse AI, home">
+        <span class="brand-name">Inverse AI</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span class="sr-only">Menu</span></button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="Why_inverse_ai.html">Why Inverse AI</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="use_cases.html">Use Cases</a></li>
+          <li><a href="how_it_works.html">How It Works</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="roadmap.html">Roadmap</a></li>
+          <li class="nav-cta"><a href="get_involved.html">Get Involved</a></li>
+        </ul>
+      </nav>
     </div>
-    <!-- Hero Section -->
-    <section class="headerSection" id="headerTop">
-        <div class="headerTop">
-            <h1><a href="#">Inverse AI</a></h1>
-            <div class="menuIco"></div>
-            <button class="menuBtn" id="menuBtn">
-                <img src="images/menu.svg" alt="">
-            </button>
-            <div class="navBg">
-                <button id="menuClose"><img src="images/close.svg" alt=""></button>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Why_inverse_ai.html">Why Inverse AI</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="use_cases.html">Use Cases</a></li>
-                    <li><a href="how_it_works.html">How It Works</a></li>
-                    <li><a href="roadmap.html">Roadmap</a></li>
-                    <li><a href="get_involved.html">Get Involved</a></li>
-                </ul>
-            </nav>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <video muted loop playsinline preload="none" poster="images/hero-poster.webp" data-src="images/hero-web.mp4" aria-hidden="true"></video>
+      <div class="wrap">
+        <div class="hero-inner">
+          <span class="eyebrow">AI interpretability &amp; alignment</span>
+          <h1>Understand your AI. <em>Correct it.</em> Trust it.</h1>
+          <p class="lede">Inverse AI shows why an AI model made a decision, lets you fix its behaviour without retraining, and keeps checking that it stays fixed. The company is built on published research in medical imaging, language models, and machine-learning operations.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="research.html">Explore the research <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="get_involved.html">Partner or invest</a>
+          </div>
         </div>
+      </div>
     </section>
 
-    <div class="hero">
-            <video id="heroVid" autoplay loop muted playsinline defaultmuted preload="auto">
-                <source src="/images/hero.mp4" type="video/mp4">
-            </video>
-            <div class="heroText">
-                <div class="owl-carousel" id="heroText">
-                    <div>
-                        <p>Welcome to Inverse AI!</p>
-                    </div>
-                    <div>
-                        <p>AI alignment and interpretability</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    <section class="grayBg">
-        <div class="container-xxl">
-            <h2>Value Triad</h2>
-            <div class="tileBoxWrapper">
-                <a href="#">
-                    <div class="tileBox">
-                        <div>
-                            <img src="./images/inspect-data.svg" alt="">
-                        </div>
-                        <div>
-                            <h3>Inspect any model</h3>
-                            <span>from XGBoost to GPT-4</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="tileBox">
-                        <div>
-                            <img src="./images/fast.svg" alt="">
-                        </div>
-                        <div>
-                            <h3>Intervene in seconds</h3>
-                            <span>weight-edit, feature-steer, bias-patch.</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="tileBox">
-                        <div>
-                            <img src="./images/monitoring.svg" alt="">
-                        </div>
-                        <div>
-                            <h3>Monitor in production</h3>
-                            <span>drift, fairness, compliance alerts.</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="timelineBg timelineBgImg">
-        <div class="container-xxl">
-            <h2>Why Now?</h2>
-
-            <!-- Intro copy -->
-            <p>
-            In the last decade, rapid advances in deep learning brought remarkable capabilities—yet also
-            <strong>opaque “black-box” decisions, unfair bias, and safety hazards</strong>.
-            The timeline below captures the landmark discoveries, tools, incidents, and regulations that
-            drove the global push toward <em>explainable, transparent, and aligned AI</em>.
-            </p>
-
-            <!-- Begin timeline carousel -->
-            <div class="owl-carousel" id="timeline">
-
-            <!-- 2014 – Superintelligence -->
-            <div class="timelineWrapper">
-                <div class="timelineTop"><span>2014</span></div>
-                <div class="timelineBottom">
-                <span>
-                    <h6>“Superintelligence” book sparks AI-safety debate</h6>
-                    <p>Nick Bostrom’s bestseller moves existential-risk and alignment concerns
-                    from academia to mainstream policy circles.</p>
-                </span>
-                </div>
-            </div>
-
-            <!-- 2015 – Google Photos bias -->
-            <div class="timelineWrapper">
-                <div class="timelineTop"><span>2015</span></div>
-                <div class="timelineBottom">
-                <span>
-                    <h6>Google Photos mis-labels Black users as “gorillas”</h6>
-                    <p>The scandal becomes a rallying cry for fairness metrics and
-                    post-hoc explanation tooling in vision models.</p>
-                </span>
-                </div>
-            </div>
-
-            <!-- 2016 – LIME + Tay + COMPAS -->
-            <div class="timelineWrapper">
-                <div class="timelineTop"><span>2016</span></div>
-                <div class="timelineBottom">
-                <span>
-                    <h6>LIME released · Tay &amp; COMPAS expose “black-box” risks</h6>
-                    <p>Ribeiro et al. open-source <strong>LIME</strong>;
-                    Microsoft’s Tay turns racist in 16 h; ProPublica reveals racial bias in
-                    COMPAS sentencing.  XAI moves from research to necessity.</p>
-                </span>
-                </div>
-            </div>
-
-            <!-- 2017 – DARPA XAI + SHAP -->
-            <div class="timelineWrapper">
-                <div class="timelineTop"><span>2017</span></div>
-                <div class="timelineBottom">
-                <span>
-                    <h6>DARPA XAI program&nbsp;&amp;&nbsp;SHAP framework</h6>
-                    <p>US DoD funds interpretable ML; Lundberg&nbsp;&amp;&nbsp;Lee unveil
-                    game-theoretic <strong>SHAP</strong>, which soon becomes the industry default
-                    for local feature attributions.</p>
-                </span>
-                </div>
-            </div>
-
-            <!-- 2018 – GDPR Right-to-Explanation -->
-            <div class="timelineWrapper">
-                <div class="timelineTop"><span>2018</span></div>
-                <div class="timelineBottom">
-                <span>
-                    <h6>GDPR enforces “meaningful explanation”</h6>
-                    <p>Europe’s data-protection law codifies users’ right to understand automated
-                    decisions — driving corporate adoption of XAI dashboards.</p>
-                </span>
-                </div>
-            </div>
-
-            <!-- 2019 – Captum + AIX360 + Amazon bias -->
-            <div class="timelineWrapper">
-                <div class="timelineTop"><span>2019</span></div>
-                <div class="timelineBottom">
-                <span>
-                    <h6>Open-source XAI toolkits blossom</h6>
-                    <p>IBM launches <strong>AIX360</strong>; Facebook releases <strong>Captum</strong>; Microsoft
-                    ships InterpretML. Amazon reveals biased recruiting AI &amp; shutters the project.</p>
-                </span>
-                </div>
-            </div>
-
-            <!-- 2020 – Transformer Circuits & LIT -->
-            <div class="timelineWrapper">
-                <div class="timelineTop"><span>2020</span></div>
-                <div class="timelineBottom">
-                <span>
-                    <h6>Mechanistic “Transformer Circuits” published</h6>
-                    <p>Olah et al. dissect neurons &amp; heads in GPT-2, kick-starting modern
-                    <em>mechanistic interpretability</em>. Google releases LIT for NLP inspection.</p>
-                </span>
-                </div>
-            </div>
-
-            <!-- 2021 – EU AI Act draft -->
-            <div class="timelineWrapper">
-                <div class="timelineTop"><span>2021</span></div>
-                <div class="timelineBottom">
-                <span>
-                    <h6>EU proposes risk-based AI Act</h6>
-                    <p>First comprehensive AI regulation demands transparency,
-                    human oversight, and technical documentation for high-risk systems.</p>
-                </span>
-                </div>
-            </div>
-
-            <!-- 2022 – ChatGPT & Galactica hallucinations -->
-            <div class="timelineWrapper">
-                <div class="timelineTop"><span>2022</span></div>
-                <div class="timelineBottom">
-                <span>
-                    <h6>“Hallucination” era begins</h6>
-                    <p>OpenAI’s ChatGPT wows 100 M users but fabricates facts;
-                    Meta’s Galactica pulled after 48 h of false citations — a wake-up call
-                    for LLM transparency &amp; safety.</p>
-                </span>
-                </div>
-            </div>
-
-            <!-- 2023 – Constitutional AI & Superalignment -->
-            <div class="timelineWrapper">
-                <div class="timelineTop"><span>2023</span></div>
-                <div class="timelineBottom">
-                <span>
-                    <h6>Alignment breakthroughs</h6>
-                    <p>Anthropic debuts <strong>Constitutional AI</strong>;
-                    OpenAI stakes 20 % compute on the <em>Superalignment</em> project,
-                    aiming to control super-human models by 2027.</p>
-                </span>
-                </div>
-            </div>
-
-            <!-- 2024 – EU AI Act final vote -->
-            <div class="timelineWrapper">
-                <div class="timelineTop"><span>2024</span></div>
-                <div class="timelineBottom">
-                <span>
-                    <h6>EU AI Act passes · Global compliance race</h6>
-                    <p>Companies scramble to embed explainability &amp; risk-management
-                    to meet 2026 enforcement; UAE issues updated AI Ethics Guidelines.</p>
-                </span>
-                </div>
-            </div>
-
-            <!-- 2025 – Circuit-level LLM maps -->
-            <div class="timelineWrapper">
-                <div class="timelineTop"><span>2025</span></div>
-                <div class="timelineBottom">
-                <span>
-                    <h6>First full circuit map of a 70B-param LLM</h6>
-                    <p>Anthropic &amp; open-research partners publish a neuron-by-neuron
-                    atlas of Claude-3-Sonnet, proving large-scale transparency possible
-                    and setting a new bar for <em>model auditing</em>.</p>
-                </span>
-                </div>
-            </div>
-
-            </div><!-- /owl-carousel -->
-        </div><!-- /container -->
+    <section class="proof" aria-label="At a glance">
+      <div class="wrap">
+        <div class="proof-item"><div class="proof-num">300+</div><div class="proof-label">citations to the founder’s published work</div></div>
+        <div class="proof-item"><div class="proof-num">IEEE 2026</div><div class="proof-label">explainable-AI study in diabetic retinopathy</div></div>
+        <div class="proof-item"><div class="proof-num">κ 0.896</div><div class="proof-label">quadratic weighted kappa, APTOS 2019 test set</div></div>
+        <div class="proof-item"><div class="proof-num">UAEU</div><div class="proof-label">doctoral research, College of Computing and AI</div></div>
+      </div>
     </section>
 
-    <section class="stepWrap">
-        <div class="container-xxl">
-            <h2>Why Now?</h2>
-            <div id="stepWrap">
-                <h3>Upload Model</h3>
-                <section>
-                    <div>
-                        <label class="form-label">Upload Your File (PDF/JPG/PNG)</label>
-                        <div class="custom-file-upload">
-                            <input type="file" id="file-upload" accept=".pdf,.jpg,.jpeg,.png" required>
-                            <div class="file-text">
-                                <i class="fa fa-cloud-upload" aria-hidden="true"></i><br>Click to Upload or drag & drop
-                            </div>
-                            <div class="invalid-feedback mt-2">Please select a file.</div>
-                        </div>
-                    </div>
-                </section>
-                <h3>See SHAP Plot</h3>
-                <section>
-                    <div id="shapChartContainer">
-                        <canvas id="seeSHAPPlot"></canvas>
-                    </div>
-                </section>
-                <h3>Diff Result</h3>
-                <section>
-                    <div class="switchContainer">
-                        <label class="switch" for="checkbox">
-                            <input type="checkbox" id="checkbox" />
-                            <div class="slider round"></div>
-                        </label>
-                        <span>Disable toxic circult</span>
-                    </div>
-                </section>
-                <h3>Diff Result</h3>
-                <section>
-                    <canvas id="DiffResult"></canvas>
-                </section>
-            </div>
+    <section class="band white">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">The problem</span>
+          <h2>Models answer. They rarely show their work, and they are hard to correct.</h2>
+          <p>AI now grades medical images, drafts decisions, and talks to customers. The people accountable for those systems still can’t easily see why a model decided, change what it does, or prove that it keeps behaving.</p>
         </div>
+        <div class="grid grid-3">
+          <div class="card reveal">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+            <h3>Explanations nobody checks</h3>
+            <p>A heatmap looks like an answer. Whether it points at the evidence, or at the dark corner of an image, is rarely measured.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg></div>
+            <h3>Fixes that mean retraining</h3>
+            <p>Changing behaviour usually means new data and another training run. Runtime steering is faster, but its gains are seldom tested against strong alternatives, or costed.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M5 7h14"/><path d="M5 7l-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0z"/></svg></div>
+            <h3>Rules that now expect both</h3>
+            <p>The EU AI Act and national frameworks expect transparency and human oversight for high-risk AI. Teams need evidence, not just dashboards.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="container-fluid">
-            <div class="container-xxl">
-                <div class="row">
-                    <div class="col-md-12">
-                        <ul class="footerNav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="Why_inverse_ai.html">Why Inverse AI</a></li>
-                            <li><a href="features.html">Features</a></li>
-                            <li><a href="use_cases.html">Use Cases</a></li>
-                            <li><a href="how_it_works.html">How It Works</a></li>
-                            <li><a href="roadmap.html">Roadmap</a></li>
-                            <li><a href="get_involved.html">Get Involved</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-12">
-                        <ul class="footSocial">
-                            <li>
-                                <a href="#">
-                                    <img src="images/facebook.svg" alt="facebook">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/x.svg" alt="x">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/insta.svg" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/youtube.svg" alt="youtube">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <section class="band dark">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">The platform</span>
+          <h2>Three layers. Each one starts from research.</h2>
+          <p>Inverse AI is pre-product. Every layer below is grounded in work that is published or under way, and each card says which.</p>
         </div>
-        <p class="mb-1"></p>
-    </footer>
+        <div class="grid grid-3">
+          <a class="card pillar reveal" href="sight.html">
+            <div class="card-top"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/><path d="M7.5 10.5h6M10.5 7.5v6" opacity=".55"/></svg></div><span class="chip chip-published">Published</span></div>
+            <h3>Inspect</h3>
+            <p class="kicker">Explanations you can check.</p>
+            <p>Attribution maps are scored against where the evidence should be, so a highlighted region has to earn the decision it claims to explain.</p>
+            <div class="backed"><strong>Backed by</strong>Sight: mask-aware Grad-CAM and SHAP for diabetic retinopathy (IEEE, 2026)</div>
+          </a>
+          <a class="card pillar reveal" href="steer.html">
+            <div class="card-top"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg></div><span class="chip chip-active">In research</span></div>
+            <h3>Intervene</h3>
+            <p class="kicker">Change behaviour without retraining.</p>
+            <p>Representation steering for language and vision-language models, written up the same way every time and held against strong baselines and its own cost.</p>
+            <div class="backed"><strong>Backed by</strong>Steer: doctoral research on steering LLMs and VLMs (manuscript in preparation), and the <a class="text-link" href="research.html#toxicity-guard">Toxicity Guard</a> prototype</div>
+          </a>
+          <a class="card pillar reveal" href="research.html#mlops">
+            <div class="card-top"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M6.5 13l2.5-3 2.5 2 3-4 3 3"/><path d="M9 21h6"/></svg></div><span class="chip chip-planned">In design</span></div>
+            <h3>Monitor</h3>
+            <p class="kicker">Keep the evidence in production.</p>
+            <p>Continuous automation for models: versioned pipelines, drift and fairness checks, and an audit trail that follows every deployment.</p>
+            <div class="backed"><strong>Backed by</strong>DevOps practices of continuous automation for ML (<em>Information</em>, 2020), cited 240+ times</div>
+          </a>
+        </div>
+        <p class="mt-2"><a class="text-link" href="features.html">See every planned feature and its status</a></p>
+      </div>
+    </section>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/jquery.steps.js"></script>
-    <script src="js/script.js"></script>
+    <section class="band light">
+      <div class="wrap split">
+        <div class="reveal">
+          <span class="eyebrow">Featured study</span>
+          <h2 style="font-size:clamp(2rem,4vw,2.75rem);margin-bottom:1rem">Did the model look at the retina?</h2>
+          <p class="lede">A model can grade a fundus photograph for diabetic retinopathy in a moment. Our study asks the clinician’s question: did the explanation stay on the retina, and did it support the grade?</p>
+          <div class="metrics">
+            <div class="metric"><div class="metric-num">82.2%</div><div class="metric-label">accuracy, 550-image APTOS 2019 test</div></div>
+            <div class="metric"><div class="metric-num">0.896</div><div class="metric-label">quadratic weighted kappa</div></div>
+            <div class="metric"><div class="metric-num">0.29→0.21</div><div class="metric-label">Grad-CAM border ratio, once scored inside the retina</div></div>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn-dark" href="sight.html">Read the study <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+          <p class="small muted mt-1">A research study, not a screening device.</p>
+        </div>
+        <figure class="figure figure-frame reveal">
+          <img src="images/sight/gradcam.jpg" alt="Four fundus photographs beside their Grad-CAM heatmaps. Three predicted grades match the true grade; one moderate case is predicted severe." width="1800" height="602" loading="lazy">
+          <figcaption>Grad-CAM on four test cases. Green frames are correct grades; the red frame is a moderate case graded severe.</figcaption>
+        </figure>
+      </div>
+    </section>
 
-    <script>
+    <section class="band white">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">How it works</span>
+          <h2>One loop, from a single decision to evidence.</h2>
+          <p>The same discipline applies to an eye scan, a chatbot answer, or a document read by a vision-language model.</p>
+        </div>
+        <ol class="flow reveal" aria-label="The Inverse AI loop">
+          <li>Decide</li><li>Explain</li><li>Check</li><li>Intervene</li><li>Verify</li><li>Monitor</li>
+        </ol>
+        <p class="mt-1"><a class="text-link" href="how_it_works.html">Walk through the loop</a></p>
+      </div>
+    </section>
 
-        $("#stepWrap").steps({
-            headerTag: "h3",
-            bodyTag: "section",
-            stepsOrientation: $.fn.steps.stepsOrientation.horizontal,
-            transitionEffect: "fade",
-            transitionEffectSpeed: 200,
-            autoFocus: true,
-            enableKeyNavigation: true,
-            enablePagination: true,
-            suppressPaginationOnFocus: true,
-            enableContentCache: true,
-            enableCancelButton: false,
-            titleTemplate: '<span class="number"></span> #title#',
-            loadingTemplate: '<span class="spinner"></span> #text#',
-            labels: {
-                cancel: "Cancel",
-                current: "current step:",
-                pagination: "Pagination",
-                finish: "Finish",
-                next: "Next",
-                previous: "Previous",
-                loading: "Loading ..."
-            }
-        });
+    <section class="band dark dark-2">
+      <div class="wrap founder reveal">
+        <div class="founder-photo"><img src="images/founder.jpg" alt="Saeed Thabit, founder of Inverse AI" width="640" height="640"></div>
+        <div>
+          <span class="eyebrow">Founder</span>
+          <h3>Saeed Thabit</h3>
+          <p class="role">Founder, Inverse AI · Doctoral researcher, United Arab Emirates University</p>
+          <p class="lede" style="color:var(--on-dark)">Saeed’s research asks when an AI explanation, or an intervention, can be trusted, from retinal photographs to large language and vision-language models.</p>
+          <p class="muted">Before the doctorate he worked in software development leadership and co-authored a widely cited paper on bringing DevOps practice to machine learning. Inverse AI is the company built to carry that research into practice.</p>
+          <div class="founder-links">
+            <a class="text-link" href="Why_inverse_ai.html#founder">Full profile</a>
+            <a class="text-link" href="https://scholar.google.com/citations?user=QzRmRWQAAAAJ&amp;hl=en" rel="noopener">Google Scholar</a>
+            <a class="text-link" href="https://orcid.org/0000-0001-9868-7477" rel="noopener">ORCID</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        // File upload input handling
-        const fileInput = document.querySelector("#file-upload");
-        const fileText = document.querySelector(".file-text");
-
-        fileInput.parentElement.addEventListener("click", () => fileInput.click());
-
-        fileInput.addEventListener("change", function () {
-            if (fileInput.files.length > 0) {
-                const fileName = fileInput.files[0].name;
-                fileText.innerHTML = `<i class="fa fa-check-circle" aria-hidden="true"></i><br>${fileName}`;
-                fileInput.closest(".custom-file-upload").classList.add("file-selected");
-            } else {
-                fileText.innerHTML = `<i class="fa fa-cloud-upload" aria-hidden="true"></i><br>Click to Upload or drag & drop`;
-                fileInput.closest(".custom-file-upload").classList.remove("file-selected");
-            }
-        });
-
-        var horizontalBarChartShapp = new Chart(seeSHAPPlot, {
-            type: 'horizontalBar',
-            data: {
-                labels: ["Label 1", "Label 2", "Label 3", "Label 4", "Label 5"],
-                datasets: [{
-                    data: [100, -220, 180, -100, 50],
-                    backgroundColor: ["#73BFB8", "#cff67b", "#94dafb", "#fd8080", "#6d848e", "#26a0fc", "#26e7a6", "#febc3b", "#fab1b2", "#8b75d7"],
-                }]
-            },
-            options: {
-                tooltips: {
-                    enabled: true
-                },
-                responsive: true,
-                legend: {
-                    display: false,
-                    responsive: true,
-                    position: 'top',
-                    fullWidth: true,
-                    labels: {
-                        boxWidth: 10,
-                        padding: 50,
-                    }
-                },
-                scales: {
-                    yAxes: [{
-                        barPercentage: 0.75,
-                        gridLines: {
-                            display: true,
-                            drawTicks: true,
-                            drawOnChartArea: true,
-                            drawBorder: true
-                        },
-                        ticks: {
-                            fontColor: '#000',
-                            fontFamily: 'Lato',
-                            fontSize: 16
-                        }
-
-                    }],
-                    xAxes: [{
-                        gridLines: {
-                            display: true,
-                            drawTicks: true,
-                            tickMarkLength: 5,
-                            drawBorder: true
-                        },
-                        ticks: {
-                            padding: 5,
-                            beginAtZero: true,
-                            fontColor: '#000',
-                            fontFamily: 'Lato',
-                            fontSize: 16,
-                            callback: function (label, index, labels) {
-                                return label / 1000;
-                            }
-
-                        },
-                        scaleLabel: {
-                            display: false,
-                            padding: 10,
-                            fontFamily: 'Lato',
-                            fontColor: '#000',
-                            fontSize: 16,
-                            fontStyle: 700,
-                            labelString: 'see SHAP Plot'
-                        },
-
-                    }]
-                }
-            }
-        });
-
-
-
-        var horizontalBarChart = new Chart(DiffResult, {
-            type: 'horizontalBar',
-            data: {
-                labels: ["Label 1", "Label 2", "Label 3", "Label 4", "Label 5"],
-                datasets: [{
-                    data: [35, 22, 18, 10, 50],
-                    backgroundColor: ["#73BFB8", "#cff67b", "#94dafb", "#fd8080", "#6d848e", "#26a0fc", "#26e7a6", "#febc3b", "#fab1b2", "#8b75d7"],
-                }]
-            },
-            options: {
-                tooltips: {
-                    enabled: false
-                },
-                responsive: true,
-                legend: {
-                    display: false,
-                    responsive: true,
-                    position: 'bottom',
-                    fullWidth: true,
-                    labels: {
-                        boxWidth: 10,
-                        padding: 10
-                    }
-                },
-                scales: {
-                    yAxes: [{
-                        barPercentage: 0.75,
-                        gridLines: {
-                            display: true,
-                            drawTicks: true,
-                            drawOnChartArea: false
-                        },
-                        ticks: {
-                            fontColor: '#000',
-                            fontFamily: 'Lato',
-                            fontSize: 16
-                        }
-
-                    }],
-                    xAxes: [{
-                        gridLines: {
-                            display: true,
-                            drawTicks: false,
-                            tickMarkLength: 5,
-                            drawBorder: false
-                        },
-                        ticks: {
-                            padding: 5,
-                            beginAtZero: true,
-                            fontColor: '#000',
-                            fontFamily: 'Lato',
-                            fontSize: 16,
-                            callback: function (label, index, labels) {
-                                return label / 1000;
-                            }
-
-                        },
-                        scaleLabel: {
-                            display: false,
-                            padding: 10,
-                            fontFamily: 'Lato',
-                            fontColor: '#000',
-                            fontSize: 16,
-                            fontStyle: 700,
-                            labelString: 'Diff Result'
-                        },
-
-                    }]
-                }
-            }
-        });
-    </script>
-
+    <section class="band cta">
+      <div class="wrap">
+        <div>
+          <h2>Building the trust layer for AI, from the UAE.</h2>
+          <p>We’re speaking with investors, clinical and industry partners, and research collaborators.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="get_involved.html">Get involved <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="roadmap.html">See the roadmap</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><span class="brand-name">Inverse AI</span></a>
+          <p class="footer-about">Helping teams understand their AI, correct it, and trust it. Research-led, built in the UAE.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="Why_inverse_ai.html">Why Inverse AI</a></li>
+            <li><a href="Why_inverse_ai.html#founder">Founder</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="get_involved.html">Get Involved</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="use_cases.html">Use Cases</a></li>
+            <li><a href="how_it_works.html">How It Works</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Research</h4>
+          <ul>
+            <li><a href="research.html">Publications</a></li>
+            <li><a href="sight.html">Sight</a></li>
+            <li><a href="steer.html">Steer</a></li>
+            <li><a href="https://scholar.google.com/citations?user=QzRmRWQAAAAJ&amp;hl=en" rel="noopener">Google Scholar</a></li>
+            <li><a href="https://orcid.org/0000-0001-9868-7477" rel="noopener">ORCID</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>© <span data-year>2026</span> Inverse AI. United Arab Emirates.</span>
+        <span>Research in progress. Not a medical device. Not yet a commercial product.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/inverse.js"></script>
 </body>
-
 </html>
